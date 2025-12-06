@@ -234,3 +234,4 @@ class TCIController():
         if isinstance(self.infusion_rate, np.ndarray):
             self.infusion_rate = self.infusion_rate[0]
         return self.infusion_rate
+        
