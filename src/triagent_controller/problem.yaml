@@ -1,0 +1,17 @@
+# Problem definition for the mechanistic tri-agent PKPD controller
+# Phase 1: time grid, clinical targets, and discrete dose levels.
+
+delta_t: 5                # seconds per control step
+horizon: 6                # number of future steps to simulate/evaluate
+duration_seconds: 7200    # total simulation time (2 hours)
+
+# Clinical targets and safety thresholds
+target_BIS: [40, 60]      # hypnosis target window
+MAP_min: 65               # mmHg, lower safety bound for MAP
+
+# Discrete dose levels for each drug (low, medium, high).
+# These values are grounded in clinical maintenance ranges.
+dose_levels:
+  propofol: [4.0, 8.0, 12.0]           # mg/kg/h
+  remifentanil: [0.1, 0.2, 0.3]       # µg/kg/min
+  norepinephrine: [0.05, 0.10, 0.20]  # µg/kg/min
