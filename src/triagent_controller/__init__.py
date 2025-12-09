@@ -9,5 +9,13 @@ Phase 1: this package defines the problem configuration and the
 state/action structures. Later phases will add controllers,
 cost functions, and simulation pipelines.
 """
+"""
+triagent_controller
 
+Mechanistic tri-agent closed-loop control system with RL support.
+"""
 from .state_action import PatientState, JointAction, enumerate_actions  # noqa: F401
+from .rl_environment import AnesthesiaEnv  # Add this line
+
+__all__ = ['PatientState', 'JointAction', 'enumerate_actions', 'AnesthesiaEnv']
+
