@@ -3,8 +3,10 @@ Final calibrated RL environment with correct drug dosing for the tri-agent anest
 """
 
 import numpy as np
-import gym
-from gym import spaces
+"""import gym"""
+"""from gym import spaces"""
+import gymnasium as gym
+from gymnasium import spaces
 from typing import Optional, Dict, Any, Tuple
 import matplotlib.pyplot as plt
 import pandas as pd
