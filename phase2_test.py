@@ -43,8 +43,8 @@ def run_phase2_test():
         inf = action_to_infusions(action_id)
         print(f"Infusion rates (mg/s or µg/s): {inf}\n")
 
-        # Run 20 seconds with this action
-        for t in range(20):
+        # Run 60 seconds with this action
+        for t in range(60):
             obs = env.step(inf)
 
             print(
